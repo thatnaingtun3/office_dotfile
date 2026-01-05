@@ -11,7 +11,7 @@ vim.api.nvim_create_autocmd("FocusLost", {
   command = "silent! wall",
 })
 
--- Auto-save on buffer change (insert leave or text changed)
+-- Auto-s ve on buffer change (insert leave or text changed)
 vim.api.nvim_create_autocmd({ "InsertLeave", "TextChanged" }, {
   group = autosave_group,
   pattern = "*",
